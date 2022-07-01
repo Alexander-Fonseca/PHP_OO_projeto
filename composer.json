@@ -1,0 +1,16 @@
+{
+    "name": "motol/php_oo_projeto",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Fonseca",
+            "email": "motoleco@hotmail.com"
+        }
+    ],
+    "require": {}
+}
