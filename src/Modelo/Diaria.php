@@ -20,4 +20,15 @@ class Diaria
     $this->diarista = $diarista;
     $this->cliente = $cliente;
   }
+  public function obterTodas()
+  {
+    return [
+      new self(
+        '02/07/2022',
+        8,
+        new Diarista('Maria'),
+        new Cliente('João')
+      ),
+    ];
+  }
 }
