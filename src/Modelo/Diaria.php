@@ -1,18 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Modelo;
 
 class Diaria
 {
-  public $data;
+  public string $data;
 
-  public $tempo;
+  public int $tempo;
 
   public  Diarista $diarista;
 
   public  Cliente $cliente;
 
-  public function __construct($data, $tempo, Diarista $diarista, Cliente $cliente)
+  public function __construct(string $data, int $tempo, Diarista $diarista, Cliente $cliente)
   {
     //fazendo isso pois a classe é private
     $this->tempo = $tempo;
