@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\controlador;
 
 use App\Modelo\Diaria as ModeloDiaria;

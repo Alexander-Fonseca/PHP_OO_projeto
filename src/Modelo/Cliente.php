@@ -6,10 +6,7 @@ namespace App\Modelo;
 
 class Cliente
 {
-  public string $nomeCompleto;
 
-  public function __construct(string $nomeCompleto)
-  {
-    $this->nomeCompleto = $nomeCompleto;
-  }
+  public function __construct(
+    public string $nomeCompleto){}
 }

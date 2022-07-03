@@ -6,10 +6,8 @@ namespace App\Modelo;
 
 class Diarista
 {
-  public string $nome;
 
-  public function __construct(string $nome)
-  {
-    $this->nome = $nome;
-  }
+  public function __construct(
+    public string $nome)
+  {}
 }

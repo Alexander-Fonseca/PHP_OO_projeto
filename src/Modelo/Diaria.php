@@ -6,22 +6,12 @@ namespace App\Modelo;
 
 class Diaria
 {
-  public string $data;
+  public function __construct(
+    public string $data, 
+    public int $tempo, 
+    public Diarista $diarista, 
+    public Cliente $cliente){}
 
-  public int $tempo;
-
-  public  Diarista $diarista;
-
-  public  Cliente $cliente;
-
-  public function __construct(string $data, int $tempo, Diarista $diarista, Cliente $cliente)
-  {
-    //fazendo isso pois a classe é private
-    $this->tempo = $tempo;
-    $this->data = $data;
-    $this->diarista = $diarista;
-    $this->cliente = $cliente;
-  }
   static public function obterTodas()
   {
     return [
