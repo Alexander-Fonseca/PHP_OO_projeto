@@ -28,10 +28,10 @@
       <tbody>
         <?php foreach($diarias as $diaria) : ?>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th><?= $diaria->data ?></th>
+            <td><?= $diaria->tempo ?></td>
+            <td><?= $diaria->diarista->nome ?></td>
+            <td><?= $diaria->cliente->nomeCompleto ?></td>
           </tr>
         <?php endforeach;?>  
       </tbody>

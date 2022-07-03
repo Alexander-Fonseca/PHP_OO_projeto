@@ -4,13 +4,13 @@ namespace App\Modelo;
 
 class Diaria
 {
-  private $data;
+  public $data;
 
-  private $tempo;
+  public $tempo;
 
-  private  Diarista $diarista;
+  public  Diarista $diarista;
 
-  private  Cliente $cliente;
+  public  Cliente $cliente;
 
   public function __construct($data, $tempo, Diarista $diarista, Cliente $cliente)
   {
