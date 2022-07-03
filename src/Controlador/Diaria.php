@@ -9,6 +9,11 @@ use App\Modelo\Diaria as ModeloDiaria;
 //vai obter os dados através do modelo e chamar camada visualização
 class Diaria
 {
+  /**
+   * Lista as diárias para o usuário
+   *
+   * @return void
+   */
   public function listar()
   {
     $diarias = ModeloDiaria::obterTodas();

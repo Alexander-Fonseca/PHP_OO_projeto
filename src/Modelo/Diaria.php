@@ -11,7 +11,11 @@ class Diaria
     public int $tempo, 
     public Diarista $diarista, 
     public Cliente $cliente){}
-
+  /**
+   * Retorna a lista das diárias
+   *
+   * @return void
+   */
   static public function obterTodas()
   {
     return [
